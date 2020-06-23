@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"ppm\startup_stm32f407xx.o"
+"ppm\main.o"
+"ppm\stm32f4xx_it.o"
+"ppm\stm32f4xx_hal_msp.o"
+"ppm\stm32f4xx_hal_tim.o"
+"ppm\stm32f4xx_hal_tim_ex.o"
+"ppm\stm32f4xx_hal_rcc.o"
+"ppm\stm32f4xx_hal_rcc_ex.o"
+"ppm\stm32f4xx_hal_flash.o"
+"ppm\stm32f4xx_hal_flash_ex.o"
+"ppm\stm32f4xx_hal_flash_ramfunc.o"
+"ppm\stm32f4xx_hal_gpio.o"
+"ppm\stm32f4xx_hal_dma_ex.o"
+"ppm\stm32f4xx_hal_dma.o"
+"ppm\stm32f4xx_hal_pwr.o"
+"ppm\stm32f4xx_hal_pwr_ex.o"
+"ppm\stm32f4xx_hal_cortex.o"
+"ppm\stm32f4xx_hal.o"
+"ppm\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "PPM\PPM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PPM.map" -o PPM\PPM.axf
